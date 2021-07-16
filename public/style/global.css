@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-family: "IBM Plex Serif", sans-serif;
+  --user-font-scale: 1rem - 16px;
+  font-size: clamp(0.75rem, 0.4626rem + 1.0309vw + var(--user-font-scale), 1rem);
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+shrink {
+  letter-spacing: 0.0rem;
+}
+
+a {
+  color: #f9fafb;
+  font-weight: bold;
+  display: inline-block;
+}
+
+@font-face {
+  font-family: charter;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  src: url('charter_regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: charter;
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: normal;
+  src: url('charter_bold.woff2') format('woff2');
+}
+
+body {
+  padding: 1rem;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #f9fafb;
+  font-weight: 400;
+  color: #1d1c15;
+  background: rgba(244, 243, 237, 1.000);
+  display: grid;
+  grid-template-rows: 1fr min-content;
+}
+
+main {
+  background-color: rgba(0, 122, 74, 1.000);
+  color: #f9fafb;
+  padding: 2rem;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+}
